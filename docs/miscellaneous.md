@@ -7,6 +7,7 @@ Contributing Author(s): [@iamNamanKhare](https://github.com/iamNamanKhare), [@Na
 **List of Elements :**
 
 - [ALU](#ALU)
+- [Half Adder](#Half_Adder)
 - [Adder](#Adder)
 - [Buffer](#Buffer)
 - [Tri State Buffer](#tri-state-buffer)
@@ -52,6 +53,41 @@ There are Different ports in an ALU :
 |    1 0 1     |         5         |      A &#124; ~B|
 |    1 1 0     |         6         |      A - B      |
 |    1 1 1     |         7         |       SLT       |
+
+## HALF ADDER
+
+Half adder is a combinational circuit, which performs the addition of two binary numbers A and B are of single bit. It produces two outputs sum, S & carry, C.
+
+
+**Truth Table for Different values in Half - Adder :**
+| Input |   Output     |
+|-------|--------------|
+| A | B | C   |  SUM   |
+|---|---|-----|--------|
+| 0 | 0 |  0  |   0    |
+| 0 | 1 |  1  |   1    |
+| 1 | 0 |  0  |   1    |  
+| 1 | 1 |  1  |   0    |  
+
+From Truth table, we can directly write the Boolean functions for each output as
+<br/>&nbsp;&nbsp;&nbsp;&nbspS=A⊕B
+<br/>&nbsp;&nbsp;&nbsp;&nbspC=AB
+
+Implemention of the above functions is with 2-input Ex-OR gate & 2-input AND gate.
+
+**STEPS FOR USAGE**
+> Location of Half Adder : Under the **Misc** section.
+
+- Drop the Half Adder from Misc section of Circuit Elements on canvas
+- Place the inputs (operands)
+<br/>
+Now,
+- Using Output tool, we can check for the different values of A & B .
+
+<iframe width="600px" height="400px" src="https://circuitverse.org/users/4909/projects/13770" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+
+
 
 ## ADDER
 
